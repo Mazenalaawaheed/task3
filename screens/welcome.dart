@@ -22,9 +22,9 @@ class WelcomePage extends StatelessWidget {
             Spacer(),
             Image.asset('lib/assets/home_page.png'),
             const Text(
-              "ITI Quiz App",
+              "Mazen's Quiz App",
               style: TextStyle(
-                  color: Colors.yellow,
+                  color: Color.fromARGB(255, 255, 0, 0),
                   fontSize: 30,
                   fontWeight: FontWeight.bold),
             ),
@@ -48,7 +48,7 @@ class WelcomePage extends StatelessWidget {
                 child: ElevatedButton(
                   style: ButtonStyle(
                     backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.green),
+                        MaterialStateProperty.all<Color>(const Color.fromARGB(255, 0, 0, 0)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5.0),
@@ -59,12 +59,12 @@ class WelcomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute<void>(
-                        builder: (BuildContext context) => const LoginPage(),
+                        builder: (BuildContext context) => const LoginScreen(),
                       ),
                     );
                   },
                   child: Text(
-                    "Start",
+                    "Press Start",
                     style: TextStyle(color: Colors.white, fontSize: 18),
                   ),
                 ),
