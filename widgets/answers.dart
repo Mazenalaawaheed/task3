@@ -13,7 +13,7 @@ class AnswerCard extends StatelessWidget {
       children: [
         Expanded(
           child: ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+            style: ElevatedButton.styleFrom(backgroundColor: const Color.fromARGB(255, 0, 0, 0)),
             onPressed: () {
               Navigator.push(
                 context,

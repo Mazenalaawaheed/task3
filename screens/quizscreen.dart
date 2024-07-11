@@ -9,10 +9,10 @@ class QuizScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color.fromARGB(255, 0, 0, 0),
         title: const Text(
-          'quiz app',
-          style: TextStyle(color: Colors.white),
+          'quiz',
+          style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
         ),
         centerTitle: true,
       ),
@@ -21,7 +21,7 @@ class QuizScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('1st Question :'),
+            const Text('First Question :'),
             const Text('1+1 ?'),
             for (int i = 0; i < answers.length; i++)
               AnswerCard(
